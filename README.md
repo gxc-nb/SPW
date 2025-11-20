@@ -6,7 +6,7 @@ This repository implements **SPW (Search-based Preference Weighting)**, a reward
 
 📂 Project Structure
 
-├── algorithms/                  # RL algorithms
+├── algorithms/
 
 │   ├── BC.py                    # Behavior Cloning (BC)
 
@@ -14,7 +14,6 @@ This repository implements **SPW (Search-based Preference Weighting)**, a reward
 
 │   └── utils_env.py             # Environment & dataset utilities
 
-│
 ├── Reward_learning/             # Reward model components
 
 │   ├── learn_reward.py          # Entry point for training reward model
@@ -22,8 +21,6 @@ This repository implements **SPW (Search-based Preference Weighting)**, a reward
 │   ├── reward_model.py          # Reward model architecture
 
 │   └── reward_utils.py          # Helper functions for reward learning
-
-│
 
 ├── configs/                     # YAML configuration files
 
@@ -33,23 +30,9 @@ This repository implements **SPW (Search-based Preference Weighting)**, a reward
 
 │   └── reward.yaml
 
-│
-
-├── dataset/                     # MetaWorld & DMC datasets
-
-│
-
-├── preference_datasets/         # Optional human preference data
-
-│
-
 ├── scripts/                     # Example scripts (e.g., example.sh)
 
-│
-
 ├── spw.yml                      # Conda environment file
-
-│
 
 └── README.md
 
