@@ -41,6 +41,7 @@ pip install git+https://github.com/denisyarats/dmc2gym.git
 ```
 
 🚀 Quick Start
+
 1️⃣ Train the Reward Model (SPW mode)
 
 ```bash
