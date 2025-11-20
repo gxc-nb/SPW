@@ -1,6 +1,6 @@
 # 🔍 SPW: Search-based Preference Weighting
 
-This repository implements **SPW (Search-based Preference Weighting)** — a unified single-stage framework for learning reward functions from both demonstrations and preference feedback.
+This repository implements **SPW (Search-based Preference Weighting)** — a unified framework for learning reward functions from both demonstrations and preferences.
 
 ```plaintext
 📦 SPW
@@ -32,6 +32,7 @@ This repository implements **SPW (Search-based Preference Weighting)** — a uni
 ├── SPW.yml                      # Conda environment file
 │
 └── README.md
+```
 
 
 ## ⚙️ Installation
@@ -73,7 +74,7 @@ Or run the full pipeline with:
 bash scripts/example.sh
 ```
 
-# 📌 Algorithms
+## 📌 Algorithms
 
 In this repo, we can run the following reward-learning methods:
 
