@@ -1,0 +1,42 @@
+actor_lr: 3e-4
+batch_size: 256
+beta: 3.0
+buffer_size: 10000000
+checkpoints_path: null
+device: cuda
+discount: 0.99
+env: null
+eval_freq: 5000
+iql_deterministic: false
+iql_tau: 0.7
+load_model: ''
+max_timesteps: 250_000
+n_episodes: 50
+normalize: true
+normalize_reward: true
+# project: CORL-MetaWorld
+qf_lr: 3e-4
+seed: 0
+tau: 0.005
+vf_lr: 3e-4
+
+data_quality: 5.0
+trivial_reward: 0
+use_reward_model: false
+use_bc_model: false
+feedback_num: 500
+threshold: 0.5
+segment_size: 25
+hidden_sizes: 128
+ensemble_num: 3
+ensemble_method: mean
+model_type: BT
+noise: 0.0
+human: false
+
+mode : MR
+attention_type : exp
+num_top_episodes: 1
+spw_tau : 0.7
+rd_gamma : 20
+

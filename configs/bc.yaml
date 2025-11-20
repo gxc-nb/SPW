@@ -1,0 +1,17 @@
+# Experiment settings
+device: cuda
+env: metaworld_box-close-v2
+data_quality: 5.0
+seed: 0
+checkpoints_path: bc_model/
+human: false
+
+# BC specific
+epochs: 50  
+batch_size: 256
+lr: 1e-3
+hidden_sizes: 256
+normalize: true
+
+# Data
+num_top_episodes: 1

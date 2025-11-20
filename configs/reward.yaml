@@ -1,0 +1,30 @@
+device: cuda
+env: metaworld-button-press-v2
+seed: 0
+checkpoints_path: reward_model/
+load_model: null
+# preference
+feedback_num: 500
+data_quality: 5.0
+segment_size: 25
+normalize: false
+threshold: 0.5
+model_type: BT
+noise: 0.0
+human: false
+
+# MLP
+epochs: 300
+batch_size: 512
+activation: tanh
+lr: 1e-3
+hidden_sizes: 128
+ensemble_num: 3
+ensemble_method: mean
+
+mode : MR
+num_top_episodes: 1 
+k: 1  
+attention_type : exp
+rd_gamma : 20
+spw_tau : 0.7
