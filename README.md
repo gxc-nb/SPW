@@ -1,21 +1,20 @@
 # 🔍 SPW: Search-based Preference Weighting
 
-This repository implements **SPW (Search-based Preference Weighting)**, a reward learning method for enhancing reinforcement learning in **MetaWorld** and **DMC** environments.
+This repository implements **SPW (Search-based Preference Weighting)** — a unified single-stage framework for learning reward functions from both demonstrations and preference feedback.
 
----
-
-📂 Project Structure
+```plaintext
+📦 SPW
 ├── algorithms/                  # RL algorithms
 │   ├── BC.py                    # Behavior Cloning (BC)
 │   ├── iql.py                   # IQL policy learning
 │   └── utils_env.py             # Environment & dataset utilities
 │
 ├── Reward_learning/             # Reward model components
-│   ├── learn_reward.py          # Entry point for training reward model
+│   ├── learn_reward.py          # Train reward model
 │   ├── reward_model.py          # Reward model architecture
-│   └── reward_utils.py          # Helper functions for reward learning
+│   └── reward_utils.py          # Reward learning utilities
 │
-├── configs/                     # YAML configuration files
+├── configs/                     # YAML config files
 │   ├── bc.yaml
 │   ├── iql.yaml
 │   └── reward.yaml
@@ -24,11 +23,12 @@ This repository implements **SPW (Search-based Preference Weighting)**, a reward
 │
 ├── preference_datasets/         # Optional human preference data
 │
-├── scripts/                     # Example scripts (e.g., example.sh)
+├── scripts/                     # Example scripts (e.g., run experiments)
 │
-├── spw.yml                      # Conda environment file
+├── SPW.yml                      # Conda environment file
 │
 └── README.md
+
 
 ## ⚙️ Installation
 
@@ -68,13 +68,22 @@ Or run the full pipeline with:
 bash scripts/example.sh
 ```
 
-📌 Notes
-Supported modes:
-MR – MLP Reward Model
-BC-P – Behavior Cloning Pretraining
-R-P – Reward Pretraining
-RD – Reward Distribution
-D-REX – Disturbance-based Reward Extrapolation
-SPW – Search-based Preference Weighting
+# 📌 Algorithms
 
-Modify hyperparameters via the YAML config files in configs/.
+In this repo, we can run the following reward-learning methods:
+
+- **MR** – MLP Reward Model  
+- **BC-P** – Behavior Cloning Pretraining  
+- **R-P** – Reward Pretraining  
+- **RD** – Reward Distribution  
+- **D-REX** – Disturbance-based Reward Extrapolation  
+- **SPW** – Search-based Preference Weighting  
+
+For other baselines, we experimented with the following repositories:
+
+| Algorithm | URL |
+|----------|-----|
+| **OPRL** (Offline Preference-based Reward Learning) | https://github.com/danielshin1/oprl |
+| **PT** (Preference Transformer) | https://github.com/csmile-1006/PreferenceTransformer |
+| **IPL** (Inverse Preference Learning) | https://github.com/jhejna/inverse-preference-learning |
+| **LiRE** (Listwise Reward Estimation) | https://github.com/chwoong/LiRE |
