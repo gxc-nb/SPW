@@ -6,9 +6,11 @@ This repository implements **SPW (Search-based Preference Weighting)** — a uni
 📦 SPW
 ├── algorithms/                  # RL algorithms
 │   ├── BC.py                    # Behavior Cloning (BC)
+
 │   ├── iql.py                   # IQL policy learning
+
 │   └── utils_env.py             # Environment & dataset utilities
-│
+
 ├── Reward_learning/             # Reward model components
 │   ├── learn_reward.py          # Train reward model
 │   ├── reward_model.py          # Reward model architecture
@@ -16,7 +18,9 @@ This repository implements **SPW (Search-based Preference Weighting)** — a uni
 │
 ├── configs/                     # YAML config files
 │   ├── bc.yaml
+
 │   ├── iql.yaml
+
 │   └── reward.yaml
 │
 ├── dataset/                     # MetaWorld & DMC datasets
@@ -41,6 +45,7 @@ pip install git+https://github.com/denisyarats/dmc2gym.git
 ```
 
 🚀 Quick Start
+
 1️⃣ Train the Reward Model (SPW mode)
 
 ```bash
